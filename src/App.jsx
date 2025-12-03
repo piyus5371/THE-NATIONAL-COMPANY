@@ -2,13 +2,15 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import LoginForm from './components/LoginForm.jsx';
-import Home from './components/Home.jsx';
+import Home from './components/Header.jsx';
+import Header from './components/Header.jsx';
 
 function App() {
-  
+
   return (
     <>
-  <Home />
+      <Header />
+      {/* <LoginForm /> */}
     </>
   )
 }
