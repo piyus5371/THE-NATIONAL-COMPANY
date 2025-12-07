@@ -1,11 +1,17 @@
 import React from "react";
 import logo from "../assets/react.svg";
 import {Cart} from "react-bootstrap-icons";
+import { BsGeoAlt, BsSearch } from "react-icons/bs";
+import { useState } from "react";
 
 function Header(){
   const user= {
     name: "Piyush",
     address: "Malad"
+  }
+  const [ItemCount, setItemCount]= useState(0);
+  const CartItem=()=>{
+    setItemCount(ItemCount + 1);
   }
   return (
     
@@ -15,16 +21,23 @@ function Header(){
           <img src={logo} alt="Logo" className="logo-image" />
           <h1 className="brand-name">TNC</h1>
         </div>
-         <div className="col-2 userDetails">
+         <div className="col-1 userDetails">
           <h2 className="userName">Delivery to {user.name}</h2>
-          <p className="userAddress">location {user.address}</p>
+          <div className="userAddressContainer">
+          <BsGeoAlt className="location-icon"  />
+          <p className="userAddress">{user.address}</p>
+          </div>
         </div>
-         <div className="col-6 searchBar">
-          <input type="text" className="search-input" placeholder="Search..." />
+         <div className="col-8 searchBarContainer">
+          <BsSearch className="search-icon"/>
+          <input type="text" className="search-Bar" placeholder="Search for Products" />
          </div>
-          <div className="col-3 login-btn">
-          <button className="btn btn-success login-button">Login</button>
-          <Cart className="user-icon" size={32} />
+          <div className="col-2 login-cart-container">
+          <button className="login-button">Login</button>
+          <div className="cart-btn" onClick={CartItem}>
+          <Cart className="cart-icon" />
+          <span className="cart-text">{ItemCount} items</span>
+          </div>
           </div>
      </div>
     </div>

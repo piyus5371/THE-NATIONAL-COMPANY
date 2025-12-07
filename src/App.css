@@ -89,7 +89,8 @@
 /* =============== Header Container Styles =============== */
 .header-container {
   background-color:#1a3e78;
-  padding: 1.5rem 2em;
+  padding: 0.5rem 2rem;
+  margin:0;
 }
 
 .header-row {
@@ -124,13 +125,97 @@
 .userDetails{
   display:flex;
   flex-direction: column;
-  text-align:left;
-  justify-content: space-between;  
+  justify-content: end; 
+  text-align:end; 
+  align-items: start;
+  padding: 0 0 0 1vw;
+  line-height: 0.5vh;
 
 }
 .userName{
   align-items:center;
   justify-content:center;
   text-align:left;
-
+  color: #c5c5c5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.userAddressContainer{
+  display:flex;
+  flex-direction: row;
+  gap: 0.3vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-icon{
+  color: #e4e4e4;
+  font-size: 1.7rem;
+}
+.userAddress{
+  align-items: center;
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 0.8rem;
+}
+.searchBarContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.search-icon{
+  color: #9a9a9a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.search-Bar{
+  margin: 0;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: sans-serif;
+}
+.login-cart-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.login-button{
+  padding: 0.5rem 1rem;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0d753c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cart-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0d753c;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: sans-serif;
+}
+.cart-icon{
+  font-size: 2rem;
+  font-weight: 700;
 }
