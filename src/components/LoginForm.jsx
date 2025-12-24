@@ -44,11 +44,14 @@ const LoginForm = () => {
             placeholder="Enter your password"
           />
         </div>
-
-        <button type="submit">Login</button>
+        <div>
+         <button type="submit" className="form login-button">Login</button>
+        </div>
+       
       </form>
     </div>
   );
 };
+
 
 export default LoginForm;
