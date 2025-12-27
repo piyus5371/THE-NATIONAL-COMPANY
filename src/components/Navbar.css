@@ -1,0 +1,25 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #1f4591;
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar span:hover {
+  color: #e0e0e0;
+  border: 2px solid #ffffff;
+  transition: none;
+  width: 100%;
+  border-radius: 5px;
+}

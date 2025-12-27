@@ -1,17 +1,16 @@
-import React from 'react'
+import React from "react";
+import "./Navbar.css";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
-    <div>
-      <div className='headerNavbar container'>  
-        <span>SHOP</span>
-        <span>SALE</span>
-        <span>BY SPACE</span>
-        <span>CREDENTIAL</span>
-        <span>SUPPORT/FAQ</span>
-      </div>
+    <div className="navbar container-fluid">
+      <span>SHOP</span>
+      <span>SALE</span>
+      <span>BY SPACE</span>
+      <span>CREDENTIAL</span>
+      <span>SUPPORT/FAQ</span>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
