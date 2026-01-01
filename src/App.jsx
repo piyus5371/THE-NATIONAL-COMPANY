@@ -2,6 +2,7 @@
 // import viteLogo from '/vite.svg'
 import "./App.css";
 import { useState } from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import LoginForm from "./components/LoginForm.jsx";
@@ -19,11 +20,14 @@ function App() {
   };
 
   return (
-    <>
+    <BrowserRouter>
       <Header onLoginClick={handleLoginClick} />
       <Navbar />
-      {loginVisible && <LoginForm />}
-    </>
+      <Routes>
+        <Route path="/" element={loginVisible && <LoginForm />}/>
+      </Routes>
+      
+    </BrowserRouter> 
   );
 }
 

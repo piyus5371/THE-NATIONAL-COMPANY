@@ -1,0 +1,187 @@
+.header-container {
+  padding: 0.5rem 2rem;
+  margin:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 15fr 3fr;
+  gap: 2rem;
+  background-color: #061e47;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoContainer{
+  display:flex;
+  align-items:center;
+  position: relative;
+  justify-content: center;
+  gap: 0;
+  color: #ffffff;
+  margin-right: 2rem;
+}
+.logo-image{
+  width: 100%;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+.brand-name{
+  font-size: 3rem;
+  font-weight: 700;
+  width: 60%;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.userDetails{
+  display:flex;
+  flex-direction: column;
+  justify-content: end; 
+  text-align:end; 
+  align-items: start;
+  padding: 0 0 0 1vw;
+  line-height: 0.5vh;
+
+}
+.userName{
+  align-items:center;
+  justify-content:center;
+  text-align:left;
+  color: #c5c5c5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.userAddressContainer{
+  display:flex;
+  flex-direction: row;
+  gap: 0.3vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-icon{
+  color: #e4e4e4;
+  font-size: 1.7rem;
+}
+.userAddress{
+  align-items: center;
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 0.8rem;
+}
+.searchBarContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.searchBarContainer:focus {
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+.search-icon{
+  color: #9a9a9a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.search-Bar{
+  margin: 0;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: sans-serif;
+}
+.login-cart-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.login-button{
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1f4591;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.login-cart-container .login-button{
+  margin-right: 2rem;
+}
+.login-cart-container .login-button:hover{
+  border: 2px solid #ffffff;
+  transition: none;
+}
+.cart-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #1f4591;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: sans-serif;
+}
+.cart-btn:hover{
+  border: 2px solid #ffffff;
+  transition: none;
+}
+.cart-icon{
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .header-container{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr ;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .header-container .logoContainer{
+    width: 100%;
+    margin:0;
+    padding:0;
+    gap:0;
+   
+  }
+  .header-container .logo-image{
+    display:none;
+    }
+  .header-container .brand-name{
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+  }
+  .header-container .userDetails{
+    display:none;
+  }
+  .header-container .searchBarContainer{
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .header-container .cart-btn .cart-text{
+    display: none;
+  }
+
+
+
+}

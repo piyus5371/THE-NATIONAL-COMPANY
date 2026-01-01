@@ -1,9 +1,9 @@
-import React from "react";
+import "./Header.css";
 import logo from "../assets/tnc2.png";
 import { Cart } from "react-bootstrap-icons";
 import { BsGeoAlt, BsSearch } from "react-icons/bs";
 import { useState } from "react";
-import LoginForm from "./LoginForm.jsx";
+
 
 function Header({ onLoginClick }) {
   const user = {
